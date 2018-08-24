@@ -3,7 +3,6 @@ import "./style.css";
 import Categories from "../Categories";
 
 class HomePage extends Component {
-
   render() {
     return (
       <div className="HomePage">

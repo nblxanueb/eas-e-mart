@@ -1,7 +1,7 @@
 body {
-  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.43;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 img {
@@ -82,7 +82,13 @@ nav {
   border-bottom: 1.3px solid red;
 }
 
-.home, .items, .create, .login, .my-postings, .sign-in, .join-eas-e {
+.home,
+.items,
+.create,
+.login,
+.my-postings,
+.sign-in,
+.join-eas-e {
   border: 1.3px solid red;
   padding: 6px;
   padding-left: 12px;
@@ -99,46 +105,43 @@ nav {
 .home:hover {
   background-color: darkred;
   color: white;
-  box-shadow:  5px 3px #999;
+  box-shadow: 5px 3px #999;
 }
 
 .items:hover {
   background-color: darkred;
   color: white;
-  box-shadow:  5px 3px #999;
+  box-shadow: 5px 3px #999;
 }
 
 .create:hover {
   background-color: darkred;
   color: white;
-  box-shadow:  5px 3px #999;
-
+  box-shadow: 5px 3px #999;
 }
 
 .login:hover {
   background-color: darkred;
   color: white;
-  box-shadow:  5px 3px #999;
-
+  box-shadow: 5px 3px #999;
 }
 
 .my-postings:hover {
   background-color: darkred;
   color: white;
-  box-shadow:  5px 3px #999;
-
+  box-shadow: 5px 3px #999;
 }
 
 .sign-in:hover {
   background-color: darkred;
   color: white;
-  box-shadow:  5px 3px #999;
+  box-shadow: 5px 3px #999;
 }
 
 .join-eas-e:hover {
   background-color: darkred;
   color: white;
-  box-shadow:  5px 3px #999;
+  box-shadow: 5px 3px #999;
 }
 
 a {
@@ -174,7 +177,9 @@ h3 {
   justify-content: flex-end;
 }
 
-.update-icon, .delete-icon, .create-icon {
+.update-icon,
+.delete-icon,
+.create-icon {
   width: 30px;
   cursor: pointer;
 }
@@ -184,15 +189,15 @@ h3 {
 }
 
 .create-icon:hover {
-  box-shadow:  5px 3px #999;
+  box-shadow: 5px 3px #999;
 }
 
 .update-icon:hover {
-  box-shadow:  5px 3px #999;
+  box-shadow: 5px 3px #999;
 }
 
 .delete-icon:hover {
-  box-shadow:  5px 3px #999;
+  box-shadow: 5px 3px #999;
 }
 
 button {
@@ -200,7 +205,8 @@ button {
   border: none;
 }
 
-.createItem, .updateItem {
+.createItem,
+.updateItem {
   line-height: 2;
   margin-left: 50px;
   height: 486px;
@@ -238,7 +244,7 @@ footer {
 .seller-details:hover {
   background-color: darkred;
   color: white;
-  box-shadow:  5px 3px #999;
+  box-shadow: 5px 3px #999;
 }
 
 .img_map {
@@ -271,15 +277,21 @@ footer {
   nav {
     margin-top: 2%;
   }
-.home, .items, .create, .login, .my-postings, .sign-in, .join-eas-e {
-  padding: 3px;
-  font-size: 13px;
-  margin-left: 3px;
-}
+  .home,
+  .items,
+  .create,
+  .login,
+  .my-postings,
+  .sign-in,
+  .join-eas-e {
+    padding: 3px;
+    font-size: 13px;
+    margin-left: 3px;
+  }
   .img_map {
     flex-direction: column-reverse;
     /* width: 5px; */
-    }
+  }
   .individual-image {
     width: 300px;
   }
@@ -318,7 +330,8 @@ footer {
   img {
     width: 10em;
   }
-  .Login, .Register {
+  .Login,
+  .Register {
     font-size: 10px;
   }
 }

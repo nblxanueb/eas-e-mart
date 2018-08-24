@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import {GoogleApiWrapper} from 'google-maps-react';
-import Category from '../Category';
+import { GoogleApiWrapper } from "google-maps-react";
+import Category from "../Category";
 import MapContainer from "../MapContainer";
 import "./style.css";
 
@@ -13,7 +13,7 @@ class Categories extends Component {
   }
 
   componentDidMount() {
-    fetch('/categories.json')
+    fetch("/categories.json")
       .then(response => response.json())
       .then(categories => {
         this.setState({
@@ -27,11 +27,13 @@ class Categories extends Component {
       <div className="Categories">
         <div className="category-details">
           {this.state.categories.map(category => {
-            return <Category
-              id={category.id}
-              img_url={category.img_url}
-              name={category.name}
-            />
+            return (
+              <Category
+                id={category.id}
+                img_url={category.img_url}
+                name={category.name}
+              />
+            );
           })}
         </div>
       </div>

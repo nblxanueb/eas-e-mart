@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import { Map } from 'google-maps-react';
+import { Map } from "google-maps-react";
 import ReactDOM from "react-dom";
-import Item from '../Item';
-
+import Item from "../Item";
 import "./style.css";
 
 class MapContainer extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      id: 0,
+      id: 0
     };
   }
 
@@ -33,30 +31,32 @@ class MapContainer extends Component {
 
       const center = new maps.LatLng(lat, lng);
 
-      const mapConfig = Object.assign({}, {
-        // center: {lat: 40.758850, lng: -73.985142},
-        center: center,
-        zoom: zoom
-      });
+      const mapConfig = Object.assign(
+        {},
+        {
+          center: center,
+          zoom: zoom
+        }
+      );
 
-    this.map = new maps.Map(node, mapConfig);
+      this.map = new maps.Map(node, mapConfig);
       const marker = new google.maps.Marker({
         animation: google.maps.Animation.DROP,
         position: { lat: lat, lng: lng },
-        map: this.map,
+        map: this.map
       });
-      }
-}
+    }
+  }
 
   render() {
     const style = {
-      width: '30rem',
-      height: '20rem',
-    }
+      width: "30rem",
+      height: "20rem"
+    };
 
     return (
       <div ref="map" style={style} className="google-maps">
-          <Map google={this.props.google.div} />
+        <Map google={this.props.google.div} />
       </div>
     );
   }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Redirect } from 'react-router-dom';
-
+import { Redirect } from "react-router-dom";
 
 class UpdateItem extends Component {
   constructor(props) {
@@ -28,15 +27,15 @@ class UpdateItem extends Component {
 
   componentDidMount() {
     let id = this.props.match.params.id;
-    console.log('got id:', id);
-    fetch('/categories.json')
+    console.log("got id:", id);
+    fetch("/categories.json")
       .then(response => response.json())
       .then(category => {
         console.log(category);
         this.setState({
           category: category
-        })
-      })
+        });
+      });
     fetch(`/item/update/${id}.json`)
       .then(response => response.json())
       .then(item => {
@@ -54,10 +53,9 @@ class UpdateItem extends Component {
           userEmail: item.user.email,
           userPhone: item.user.phone_number,
           userLongitude: item.user.longitude,
-          userLatitude: item.user.latitude,
+          userLatitude: item.user.latitude
         });
       });
-
   }
 
   onFormChange(evt) {
@@ -67,12 +65,10 @@ class UpdateItem extends Component {
     const newState = {};
     newState[name] = value;
     this.setState(newState);
-
-
   }
 
   onFormSubmit(evt) {
-    evt.preventDefault()
+    evt.preventDefault();
     const updateItem = {
       id: this.state.id,
       name: this.state.name,
@@ -84,19 +80,20 @@ class UpdateItem extends Component {
       category: this.state.category,
       category_id: this.state.category_id,
       updated: this.state.updated
-    }
-    console.log('onFormSubmit:', updateItem);
+    };
+    console.log("onFormSubmit:", updateItem);
 
     fetch(`/item/update/${this.state.id}.json`, {
       method: "PUT",
-      credentials: 'include',
+      credentials: "include",
       body: JSON.stringify(updateItem),
       headers: {
         "Content-type": "application/json"
       }
-    }).then(response => response.json())
+    })
+      .then(response => response.json())
       .then(item => {
-        console.log('state set to update');
+        console.log("state set to update");
         this.setState({
           updated: true
         });
@@ -104,7 +101,6 @@ class UpdateItem extends Component {
   }
 
   render() {
-
     if (this.state.updated === true) {
       let id = this.props.match.params.id;
       return <Redirect to={`/items/${id}`} />;
@@ -112,17 +108,21 @@ class UpdateItem extends Component {
 
     return (
       <div className="updateItem">
-      <h3>Update Item</h3>
+        <h3>Update Item</h3>
         <form onChange={this.onFormChange} onSubmit={this.onFormSubmit}>
           <select name="category_id">
             {this.state.category.map((category, index) => {
-              return <option
-                key={index}
-                value={category.id}
-                selected={this.state.category_id === category.id ? 'selected' : ''}
-              >
-                {category.name}
-              </option>
+              return (
+                <option
+                  key={index}
+                  value={category.id}
+                  selected={
+                    this.state.category_id === category.id ? "selected" : ""
+                  }
+                >
+                  {category.name}
+                </option>
+              );
             })}
           </select>
           <p>
