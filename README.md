@@ -35,3 +35,8 @@
 ### **eas-E-mart** was built using Express and React.js along with Google Maps API to display sellers' location on the map with a marker.
 
 ![giphy](https://media.giphy.com/media/NUKXPmH1hqWfrbhQjm/giphy.gif)
+
+# Responsive design
+### eas-E-mart was built with responsive design in mind and can be accessed on all devices
+
+![iphone giphy](https://media.giphy.com/media/WxJhUIO8gj7t5g2KHi/giphy.gif)
