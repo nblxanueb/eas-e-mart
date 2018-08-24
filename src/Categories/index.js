@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { GoogleApiWrapper } from "google-maps-react";
 import Category from "../Category";
-import MapContainer from "../MapContainer";
 import "./style.css";
 
 class Categories extends Component {

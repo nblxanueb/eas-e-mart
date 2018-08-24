@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Category from '../Category';
 import Item from '../Item';
 import "./style.css";
 

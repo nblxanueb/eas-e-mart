@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Map } from "google-maps-react";
 import ReactDOM from "react-dom";
-import Item from "../Item";
 import "./style.css";
 
 class MapContainer extends Component {

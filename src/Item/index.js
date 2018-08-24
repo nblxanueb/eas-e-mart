@@ -11,7 +11,7 @@ class Item extends Component {
             <img
               className="item-page-image"
               src={this.props.img_url}
-              alt="picture of item"
+              alt="item"
             />
           </Link>
         </div>

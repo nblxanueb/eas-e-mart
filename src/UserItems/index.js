@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import { GoogleApiWrapper } from "google-maps-react";
-import Category from "../Category";
 import Item from "../Item";
-import MapContainer from "../MapContainer";
 import "./style.css";
-import LoginPage from "../LoginPage";
 
 class UserItems extends Component {
   constructor(props) {

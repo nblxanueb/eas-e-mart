@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { GoogleApiWrapper } from "google-maps-react";
 import Item from "../Item";
-import MapContainer from "../MapContainer";
 import "./style.css";
 
 class Items extends Component {

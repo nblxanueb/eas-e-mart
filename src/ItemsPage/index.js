@@ -2,14 +2,10 @@ import React, { Component } from "react";
 import { GoogleApiWrapper } from "google-maps-react";
 import MapContainer from "../MapContainer";
 import {
-  BrowserRouter as Router,
-  Route,
+  BrowserRouter as
   Link,
   Redirect
 } from "react-router-dom";
-import Items from "../Items";
-import UpdateItem from "../UpdateItem";
-import Item from "../Item";
 import Popup from "reactjs-popup";
 
 import "./style.css";
@@ -100,7 +96,7 @@ class ItemsPage extends Component {
             <div className="details">
               <img
                 src={this.state.img_url}
-                alt="image"
+                alt="item"
                 className="individual-image"
               />
               <h3>{this.state.name}</h3>
