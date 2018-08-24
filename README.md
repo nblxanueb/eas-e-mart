@@ -36,9 +36,9 @@
 
 ![giphy](https://media.giphy.com/media/NUKXPmH1hqWfrbhQjm/giphy.gif)
 
-# Responsive design
+<!-- # Responsive design
 ### eas-E-mart was built with responsive design in mind and can be accessed on all devices
 
-![iphone giphy](https://media.giphy.com/media/WxJhUIO8gj7t5g2KHi/giphy.gif)
+![iphone giphy](https://media.giphy.com/media/WxJhUIO8gj7t5g2KHi/giphy.gif) -->
 
 
