@@ -1,0 +1,324 @@
+body {
+  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+img {
+  width: 15em;
+}
+
+.icon {
+  width: 30px;
+}
+
+a {
+  color: darkred;
+}
+
+.ItemsPage {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+  max-height: 473px;
+}
+
+.Items {
+  display: flex;
+  overflow: auto;
+  max-height: 503px;
+}
+
+.test {
+  width: 500px;
+}
+
+.Categories {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: flex-end;
+  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+  max-height: 483px;
+}
+
+.category-details {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item-page-image {
+  width: 15em;
+}
+
+.logo {
+  width: 45%;
+  transform: translate(0px, 10px);
+}
+
+.individual-image {
+  width: 30em;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.empty-div {
+  width: 29%;
+}
+
+nav {
+  border: box;
+  padding: 15px;
+  align-self: flex-end;
+  border-bottom: 1.3px solid red;
+}
+
+.home, .items, .create, .login, .my-postings, .sign-in, .join-eas-e {
+  border: 1.3px solid red;
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 19px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  text-shadow: 0 0 black;
+}
+
+.home:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow:  5px 3px #999;
+}
+
+.items:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow:  5px 3px #999;
+}
+
+.create:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow:  5px 3px #999;
+
+}
+
+.login:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow:  5px 3px #999;
+
+}
+
+.my-postings:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow:  5px 3px #999;
+
+}
+
+.sign-in:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow:  5px 3px #999;
+}
+
+.join-eas-e:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow:  5px 3px #999;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: darkred;
+}
+
+.item-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 50px;
+  margin-top: 35px;
+}
+
+.Item {
+  margin: 50px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.update-delete {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.update-icon, .delete-icon, .create-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.create-icon {
+  margin-left: 250px;
+}
+
+.create-icon:hover {
+  box-shadow:  5px 3px #999;
+}
+
+.update-icon:hover {
+  box-shadow:  5px 3px #999;
+}
+
+.delete-icon:hover {
+  box-shadow:  5px 3px #999;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.createItem, .updateItem {
+  line-height: 2;
+  margin-left: 50px;
+  height: 486px;
+}
+
+footer {
+  height: 50px;
+  background-color: darkred;
+  border-top: 1.3px solid red;
+  color: white;
+  text-align: center;
+}
+
+.loginPage {
+  display: flex;
+  justify-content: space-evenly;
+  height: 503px;
+}
+
+.seller-details {
+  border: 1.3px solid red;
+  font-size: 14px;
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  /* margin-left: 19px; */
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  text-shadow: 0 0 black;
+}
+
+.seller-details:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow:  5px 3px #999;
+}
+
+.img_map {
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-content {
+  max-width: 30%;
+  border: 15.3px solid red;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-name {
+  color: darkred;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.footer-name:hover {
+  color: white;
+  background-color: darkred;
+}
+
+@media (max-width: 640px) {
+  nav {
+    margin-top: 2%;
+  }
+.home, .items, .create, .login, .my-postings, .sign-in, .join-eas-e {
+  padding: 3px;
+  font-size: 13px;
+  margin-left: 3px;
+}
+  .img_map {
+    flex-direction: column-reverse;
+    /* width: 5px; */
+    }
+  .individual-image {
+    width: 300px;
+  }
+  .ItemsPage {
+    justify-content: center;
+    /* width: 50%; */
+  }
+  .description {
+    padding-left: 14%;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 70%;
+  }
+  .details {
+    padding-left: 20%;
+    padding-top: 20px;
+  }
+  .seller-details {
+    margin-left: 15%;
+  }
+  .popup-content {
+    max-width: 50%;
+  }
+  footer {
+    font-size: 10px;
+  }
+  .logo {
+    padding-left: 25%;
+  }
+  .update-delete {
+    padding-right: 15%;
+  }
+  .item-page-image {
+    width: 10em;
+  }
+  img {
+    width: 10em;
+  }
+  .Login, .Register {
+    font-size: 10px;
+  }
+}

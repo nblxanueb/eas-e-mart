@@ -1,0 +1,29 @@
+{
+  "name": "sea-mart",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:4567",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "google-maps-react": "^2.0.2",
+    "jest": "^23.1.0",
+    "pg-monitor": "^1.0.0",
+    "pg-promise": "^8.4.4",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "reactjs-popup": "^1.1.1",
+    "session-file-store": "^1.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
